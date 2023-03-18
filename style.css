@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.logo {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    width: 33%;
+    border: 3px solid white;
+    border-radius: 50px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    cursor: pointer;
+    width: 100%;
+}
+
+.nav-list {
+    width: 70%;
+    /* background-color: rgb(0, 0, 0); */
+    display: flex;
+    align-items: center;
+}
+
+.nav-list li {
+    list-style: none;
+    padding: 26px 30px;
+
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 20px;
+    margin: auto;
+}
+
+.nav-list li a:hover {
+    color: gray;
+}
+
+.rightnav {
+    /* background-color: aquamarine; */
+    width: 30%;
+    text-align: right;
+}
+
+#Search {
+    padding: 5px;
+    font-size: 17px;
+    border: 2px solid gray;
+    border-radius: 9px;
+}
+
+.background {
+    background: rgba(0, 0, 0, 0.7) url('./image/istockphoto-1289383957-170667a.jpg');
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+
+.firstsection {
+    height: 100vh;
+}
+
+.box-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100%;
+    margin: auto;
+    height: 100%;
+}
+
+.firsthaif {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.secondhaif {
+    width: 40%;
+
+}
+
+.secondhaif img {
+    width: 500px;
+    border: 4px solid white;
+    border-radius: 80px;
+    display: block;
+    margin: auto;
+    margin-left: 20px;
+}
+
+.text-big {
+    font-size: 43px;
+
+}
+
+.text-small {
+    font-size: 18px;
+}
+
+.btn {
+    padding: 8px 20px;
+    margin: 7px 4px;
+    border: 2px solid white;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    background: none;
+    color: white;
+}
+
+.btn-dark {
+    color: gray;
+    border: 2px solid rgb(143, 142, 142);
+    margin-left: 230%;
+    width: 30%;
+    cursor: pointer;
+    -moz-box-shadow: 5px 5px 5px 5px #777777;
+    -webkit-box-shadow: 5px 5px 5px 5px #777777;
+    box-shadow: 5px 5px 5px 5px #777777;
+    text-shadow: 1px 1px;
+
+}
+
+.formtextarea {
+    margin-left: 200%;
+}
+
+.btn-sm {
+    padding: 6px 10px;
+    vertical-align: middle;
+}
+
+.section {
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 100%;
+    margin: auto;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.left {
+    flex-direction: row-reverse;
+}
+
+.thumbnail img {
+    width: 400px;
+    margin-top: 50px;
+    border: 2px solid white;
+    border-radius: 18px;
+    margin-top: 10px;
+    margin-left: 0%;
+    border: solid;
+
+}
+
+.sectiontag {
+    padding: 16px 0;
+}
+
+.sactionsubtag {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.contact {
+    background-color: rgb(236, 236, 234);
+    height: 700px;
+
+}
+
+.contact h2 {
+    margin-left: 560px;
+    font-size: 7vh;
+}
+
+.text-center {
+    text-align: center;
+    padding: 30px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.form {
+    max-width: 500px;
+    margin: 20px;
+}
+
+.form input {
+    width: 250%;
+    margin: 14px 0;
+    padding: 4px 3px;
+    margin-left: 500px;
+    padding: 5px;
+    font-size: 30px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 15px;
+    margin-top: 23px;
+    margin-left: 5%;
+}
+
+.game input {
+    width: 250%;
+    margin: 20px 0;
+    padding: 40px 20px;
+    margin-left: 5%;
+    /* padding: 5px; */
+    font-size: 30px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 20px;
+    margin-top: 23px;
+
+}
+
+.text-footer {
+    text-align: center;
+    padding: 30px 0;
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 20px;
+}
+
+
+@media (max-width : 1000px) {
+    .navbar {
+        display: none;
+    }
+
+    .box-main {
+        flex-direction: column;
+    }
+
+    .firsthaif {
+        width: 90%;
+    }
+
+    .secondhaif img {
+        width: 330px;
+        margin-top: 20px;
+    }
+
+    .secondhaif {
+        width: 100%;
+    }
+
+    .section {
+        height: 120vh;
+        flex-direction: column;
+    }
+
+    .thumbnail img {
+        width: 350px;
+    }
+
+    .form {
+        width: 100%;
+        margin: 0;
+        padding-left: 10px;
+    }
+
+    .btn-dark {
+        width: 90%;
+        margin: 0;
+    }
+
+    .game input {
+        width: 250px;
+    }
+
+    .contact h2 {
+        margin-left: 64px;
+    }
+    .form input{
+        width: 80%;
+        margin-bottom: 30px;
+        margin-left: 0;
+        margin-top: 0;
+    }
+}
